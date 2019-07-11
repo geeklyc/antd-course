@@ -8,6 +8,12 @@ export default {
   ],
   routes: [{
     path: '/',
-    component: './HelloWorld',
+    component: './layout',
+    routes: [
+      {
+        path: 'helloworld',
+        component: './HelloWorld'
+      },
+    ]
   }],
 }
